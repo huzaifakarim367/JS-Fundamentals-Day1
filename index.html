@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Task - Day 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DAILY TASK - DAY 1</h1>
+
+        <!-- Task 1 -->
+        <div class="card">
+            <h2><span>1</span> Introduce Yourself</h2>
+            <div class="inputs">
+                <input type="text" id="name" value="Huzaifa karim" placeholder="Name">
+                <input type="number" id="age" value="22" placeholder="Age">
+                <input type="text" id="city" value="Mardan" placeholder="City">
+                <input type="text" id="skill" value="Web Development" placeholder="Skill">
+                <select id="isStudent"><option value="true">Student: Yes</option><option value="false">Student: No</option></select>
+            </div>
+            <button onclick="runTask1()">Generate Introduction</button>
+            <div class="output" id="output1"></div>
+        </div>
+
+        <!-- Task 2 -->
+        <div class="card">
+            <h2><span>2</span> Shop Bill Calculator</h2>
+            <div class="bill-grid">
+                <div><label>Item 1 Price</label><input type="number" id="p1" value="1200"></div>
+                <div><label>Qty</label><input type="number" id="q1" value="2"></div>
+                <div><label>Item 2 Price</label><input type="number" id="p2" value="500"></div>
+                <div><label>Qty</label><input type="number" id="q2" value="3"></div>
+                <div><label>Item 3 Price</label><input type="number" id="p3" value="850"></div>
+                <div><label>Qty</label><input type="number" id="q3" value="1"></div>
+            </div>
+            <button onclick="runTask2()">Calculate Bill</button>
+            <div class="output bill-output" id="output2"></div>
+        </div>
+
+        <!-- Task 3 -->
+        <div class="card">
+            <h2><span>3</span> Converters and String Utilities</h2>
+            
+            <div class="mini-box">
+                <h3>Celsius to Fahrenheit</h3>
+                <input type="number" id="celsius" value="35" placeholder="Celsius">
+                <button class="small" onclick="convertTemp()">Convert</button>
+                <p id="tempResult"></p>
+            </div>
+
+            <div class="mini-box">
+                <h3>Email Validator</h3>
+                <input type="text" id="email" value="   Student@Example.COM   " placeholder="Enter Email">
+                <button class="small" onclick="checkEmail()">Check Email</button>
+                <p id="emailResult"></p>
+            </div>
+
+            <div class="mini-box">
+                <h3>Bonus: Square Calculator</h3>
+                <input type="number" id="squareInput" placeholder="Enter a number">
+                <button class="small" onclick="findSquare()">Find Square</button>
+                <p id="squareResult"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
